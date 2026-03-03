@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Section class="basket-fon">
+        <header class="header">
+            <a href="index.html"><img class="header__logo" src="./Img/logo.svg" alt="логотип"></a>
+            <input class="search header__search" type="search" placeholder="Поиск">
+            <nav class="header__menu">
+                <div class="header__menu-item"><a class="header__menu-link" href="catalog.html">Каталог</a> </div>
+                <div class="header__menu-item"><a class="header__menu-link" href="basket.html">Корзина</a></div>
+            </nav>
+                        <div class="menu-mob">
+                <a href="#"><svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.000000" height="19.000000" fill="none">
+	<rect id="gg:search" width="19.000000" height="19.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Group">
+		<path id="Vector" d="M14.5026 11.4261C15.4898 10.1534 15.9551 8.5524 15.8037 6.94883C15.6524 5.34525 14.8958 3.85955 13.688 2.79399C12.4801 1.72844 10.9116 1.16305 9.30171 1.21287C7.69178 1.26269 6.16129 1.92397 5.02162 3.06217C3.88095 4.20116 3.21751 5.73224 3.1665 7.34339C3.1155 8.95455 3.68076 10.5245 4.74709 11.7334C5.81343 12.9423 7.30059 13.699 8.90551 13.8495C10.5104 13.9999 12.1123 13.5328 13.3848 12.5432L13.4188 12.5788L16.7771 15.9378C16.8506 16.0114 16.938 16.0697 17.0341 16.1095C17.1302 16.1493 17.2332 16.1698 17.3372 16.1698C17.4412 16.1698 17.5442 16.1493 17.6403 16.1095C17.7364 16.0697 17.8237 16.0114 17.8973 15.9378C17.9708 15.8643 18.0292 15.777 18.069 15.6809C18.1088 15.5848 18.1293 15.4818 18.1293 15.3777C18.1293 15.2737 18.1088 15.1707 18.069 15.0746C18.0292 14.9785 17.9708 14.8912 17.8973 14.8176L14.5382 11.4594C14.5267 11.448 14.5148 11.4369 14.5026 11.4261ZM12.8591 4.18238C13.3061 4.62213 13.6616 5.14603 13.9051 5.72386C14.1486 6.30169 14.2752 6.92201 14.2778 7.54903C14.2803 8.17606 14.1587 8.79739 13.9199 9.37718C13.6812 9.95697 13.33 10.4838 12.8866 10.9271C12.4432 11.3705 11.9164 11.7217 11.3366 11.9605C10.7568 12.1993 10.1355 12.3209 9.50848 12.3183C8.88146 12.3158 8.26114 12.1891 7.68331 11.9456C7.10548 11.7021 6.58158 11.3466 6.14183 10.8997C5.26301 10.0064 4.77276 8.8021 4.77787 7.54903C4.78297 6.29597 5.28301 5.09568 6.16907 4.20962C7.05513 3.32356 8.25542 2.82352 9.50848 2.81841C10.7616 2.81331 11.9659 3.30356 12.8591 4.18238Z" fill="rgb(255,255,255)" fill-rule="evenodd" />
+		<path id="Vector" d="M15.7888 9.37231C16.0125 8.6025 16.0838 7.78841 16.0028 6.93004C15.9218 6.07172 15.6995 5.2854 15.3357 4.57107C14.9719 3.85672 14.4668 3.21437 13.8203 2.64401C13.1737 2.07367 12.4734 1.65257 11.7193 1.38073C10.9652 1.10889 10.1573 0.986303 9.29553 1.01297C8.43379 1.03963 7.63499 1.21194 6.89911 1.5299C6.16324 1.84784 5.4903 2.31143 4.88029 2.92066C4.26972 3.53033 3.80496 4.20319 3.48601 4.93923C3.16705 5.67532 2.99391 6.47459 2.9666 7.33706C2.9393 8.19952 3.06152 9.00813 3.33328 9.76291C3.60503 10.5177 4.0263 11.2186 4.59711 11.8657C5.16792 12.5128 5.81081 13.0183 6.52578 13.3821C7.24073 13.7459 8.02775 13.9681 8.88685 14.0486C9.74593 14.1292 10.5605 14.0571 11.3306 13.8325C12.0476 13.6235 12.726 13.2822 13.3658 12.8086L16.6356 16.0792C16.6822 16.1258 16.7324 16.1671 16.7861 16.2029C16.8397 16.2387 16.8968 16.2692 16.9575 16.2943C17.0183 16.3195 17.0803 16.3384 17.1435 16.3509C17.2068 16.3635 17.2714 16.3698 17.3372 16.3698C17.403 16.3698 17.4675 16.3635 17.5308 16.351C17.5941 16.3384 17.6561 16.3195 17.7168 16.2943C17.7776 16.2691 17.8349 16.2386 17.8885 16.2028C17.9422 16.1669 17.9922 16.1258 18.0387 16.0793C18.0852 16.0328 18.1263 15.9827 18.1622 15.9291C18.198 15.8755 18.2286 15.8182 18.2538 15.7574C18.2789 15.6966 18.2978 15.6346 18.3104 15.5713C18.323 15.508 18.3293 15.4435 18.3293 15.3777C18.3293 15.312 18.323 15.2475 18.3104 15.1842C18.2978 15.1209 18.279 15.0589 18.2538 14.9981C18.2286 14.9373 18.198 14.88 18.1622 14.8263C18.1263 14.7727 18.0852 14.7227 18.0387 14.6762L14.7683 11.4065C15.2404 10.7668 15.5806 10.0887 15.7888 9.37231ZM14.5026 11.4261C15.4898 10.1534 15.9551 8.5524 15.8037 6.94883C15.6524 5.34525 14.8958 3.85955 13.688 2.79399C12.4801 1.72844 10.9116 1.16305 9.30171 1.21287C7.69178 1.26269 6.16129 1.92397 5.02162 3.06217C3.88095 4.20116 3.21751 5.73224 3.1665 7.34339C3.1155 8.95455 3.68076 10.5245 4.74709 11.7334C5.81343 12.9423 7.30059 13.699 8.90551 13.8495C10.5104 13.9999 12.1123 13.5328 13.3848 12.5432L13.4188 12.5788L16.7771 15.9378C16.8506 16.0114 16.938 16.0697 17.0341 16.1095C17.1302 16.1493 17.2332 16.1698 17.3372 16.1698C17.4412 16.1698 17.5442 16.1493 17.6403 16.1095C17.7364 16.0697 17.8237 16.0114 17.8973 15.9378C17.9708 15.8643 18.0292 15.777 18.069 15.6809C18.1088 15.5848 18.1293 15.4818 18.1293 15.3777C18.1293 15.2737 18.1088 15.1707 18.069 15.0746C18.0292 14.9785 17.9708 14.8912 17.8973 14.8176L14.5382 11.4594C14.5267 11.448 14.5148 11.4369 14.5026 11.4261ZM13.9051 5.72386C13.6616 5.14603 13.3061 4.62213 12.8591 4.18238C11.9659 3.30356 10.7616 2.81331 9.50848 2.81841C8.25542 2.82352 7.05513 3.32356 6.16907 4.20962C5.28301 5.09568 4.78297 6.29597 4.77787 7.54903C4.77276 8.8021 5.26301 10.0064 6.14183 10.8997C6.58158 11.3466 7.10548 11.7021 7.68331 11.9456C8.26114 12.1891 8.88146 12.3158 9.50848 12.3183C10.1355 12.3209 10.7568 12.1993 11.3366 11.9605C11.9164 11.7217 12.4432 11.3705 12.8866 10.9271C13.33 10.4838 13.6812 9.95697 13.9199 9.37718C14.1587 8.79739 14.2803 8.17606 14.2778 7.54903C14.2752 6.92201 14.1486 6.30169 13.9051 5.72386ZM13.2937 5.01323C13.4606 5.2593 13.603 5.52207 13.7208 5.80152C13.8386 6.08108 13.9272 6.36659 13.9867 6.65805C14.0462 6.94937 14.0766 7.24664 14.0778 7.54985C14.079 7.85309 14.0511 8.15062 13.994 8.44245C13.9368 8.73435 13.8505 9.02054 13.735 9.30102C13.6195 9.58146 13.4793 9.8454 13.3143 10.0929C13.1493 10.3403 12.9596 10.5713 12.7452 10.7857C12.5307 11.0002 12.2998 11.1899 12.0524 11.3548C11.8049 11.5198 11.5409 11.6601 11.2605 11.7756C10.98 11.8911 10.6938 11.9774 10.4019 12.0345C10.1101 12.0916 9.81255 12.1196 9.5093 12.1183C9.20608 12.1171 8.90881 12.0867 8.61748 12.0273C8.32603 11.9678 8.04053 11.8791 7.76097 11.7613C7.48152 11.6436 7.21876 11.5012 6.97269 11.3342C6.72656 11.1672 6.49713 10.9756 6.2844 10.7594C5.84633 10.3141 5.51842 9.82404 5.30067 9.2891C5.08292 8.75418 4.97532 8.17443 4.97786 7.54985C4.98041 6.92525 5.09273 6.34638 5.31483 5.81324C5.53694 5.28011 5.86882 4.79271 6.31049 4.35104C6.75216 3.90937 7.23956 3.57749 7.77269 3.35538C8.30583 3.13328 8.8847 3.02096 9.5093 3.01841C10.1339 3.01587 10.7137 3.12347 11.2486 3.34123C11.7835 3.55898 12.2736 3.88689 12.7189 4.32494C12.9351 4.53767 13.1267 4.7671 13.2937 5.01323Z" fill="rgb(255,255,255)" fill-rule="evenodd" />
+	</g>
+</svg>
+</a>
+                <a href="catalog.html"><svg viewBox="0 0 19.1995 19.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.199463" height="19.199982" fill="none" customFrame="#000000">
+	<g id="Group 201">
+		<rect id="Rectangle 46" width="4.571429" height="4.571429" x="0.000244" y="0.000000" fill="rgb(255,255,255)" />
+		<rect id="Rectangle 41" width="4.571429" height="4.571429" x="0.000244" y="7.314270" fill="rgb(255,255,255)" />
+		<rect id="Rectangle 47" width="4.571429" height="4.571428" x="0.000244" y="14.628540" fill="rgb(255,255,255)" />
+		<rect id="Rectangle 48" width="4.571429" height="4.571429" x="7.313721" y="7.314270" fill="rgb(255,255,255)" />
+		<rect id="Rectangle 45" width="4.571429" height="4.571428" x="7.313721" y="14.628540" fill="rgb(255,255,255)" />
+		<rect id="Rectangle 49" width="4.571429" height="4.571429" x="7.313721" y="0.000000" fill="rgb(255,255,255)" />
+		<rect id="Rectangle 42" width="4.571428" height="4.571429" x="14.628174" y="7.314270" fill="rgb(255,255,255)" />
+		<rect id="Rectangle 44" width="4.571428" height="4.571428" x="14.628174" y="14.628540" fill="rgb(255,255,255)" />
+		<rect id="Rectangle 43" width="4.571428" height="4.571429" x="14.628174" y="0.000000" fill="rgb(255,255,255)" />
+	</g>
+</svg>
+</a>
+                <a href="basket.html"><svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.000000" height="25.000000" fill="none">
+	<rect id="jam:shopping-cart" width="25.000000" height="25.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" transform="matrix(-1,0,0,1,25,0)" />
+	<path id="Vector" d="M7.25936 16.6667C6.70683 16.6667 6.17692 16.4472 5.78622 16.0565C5.39552 15.6658 5.17603 15.1359 5.17603 14.5833C5.17603 14.0308 5.39552 13.5009 5.78622 13.1102C6.17692 12.7195 6.70683 12.5 7.25936 12.5C7.8119 12.5 8.3418 12.7195 8.7325 13.1102C9.1232 13.5009 9.3427 14.0308 9.3427 14.5833C9.3427 15.1359 9.1232 15.6658 8.7325 16.0565C8.3418 16.4472 7.8119 16.6667 7.25936 16.6667ZM14.551 16.6667C13.9985 16.6667 13.4686 16.4472 13.0779 16.0565C12.6872 15.6658 12.4677 15.1359 12.4677 14.5833C12.4677 14.0308 12.6872 13.5009 13.0779 13.1102C13.4686 12.7195 13.9985 12.5 14.551 12.5C15.1036 12.5 15.6335 12.7195 16.0242 13.1102C16.4149 13.5009 16.6344 14.0308 16.6344 14.5833C16.6344 15.1359 16.4149 15.6658 16.0242 16.0565C15.6335 16.4472 15.1036 16.6667 14.551 16.6667ZM0.969779 2.00312C0.709739 1.99474 0.463155 1.88554 0.282173 1.69863C0.101191 1.51171 -4.62593e-16 1.26174 0 1.00156C-4.62593e-16 0.741387 0.101191 0.491411 0.282173 0.304497C0.463155 0.117584 0.709739 0.0083873 0.969779 0L2.16874 0C3.10832 0 3.92082 0.652083 4.12499 1.56875L5.4302 7.44583C5.63436 8.3625 6.44686 9.01458 7.38645 9.01458L15.2114 9.01458L16.7135 3.00417L6.97915 3.00417C6.72156 2.99241 6.47841 2.88181 6.30028 2.69537C6.12215 2.50892 6.02275 2.26099 6.02275 2.00312C6.02275 1.74526 6.12215 1.49733 6.30028 1.31088C6.47841 1.12444 6.72156 1.01384 6.97915 1.00208L16.7135 1.00208C17.018 1.00199 17.3186 1.07133 17.5923 1.20483C17.866 1.33832 18.1056 1.53246 18.293 1.77248C18.4804 2.01251 18.6106 2.29209 18.6737 2.59C18.7369 2.8879 18.7312 3.19627 18.6573 3.49167L17.1552 9.5C17.0469 9.93354 16.7968 10.3184 16.4446 10.5934C16.0924 10.8684 15.6583 11.0178 15.2114 11.0177L7.38645 11.0177C6.47477 11.0178 5.59032 10.707 4.87917 10.1366C4.16801 9.56612 3.67268 8.77019 3.47499 7.88021L2.16874 2.00312L0.969779 2.00312Z" fill="rgb(255,255,255)" fill-rule="nonzero" transform="matrix(-1,0,0,1,21.8428,4.16666)" />
+</svg>
+</a>
+            </div>
+        </header>
+        <div class="basket-fon__wrapper">
+            <h1 class="basket-fon__title">Корзина</h1>
+        </div>
+    </Section>
+    <!-- КОРЗИНА -->
+    <section class="basket center">
+        <div class="basket__product">
+            <div class="basket__product-name">
+                <p class="basket__product-text">Товар</p>
+                <p class="basket__product-text">К-во</p>
+            </div>
+            <div class="basket__product-item1">
+                <div class="basket__product-card">
+                    <img class="basket__product-Img" src="./Img/BasketMenu51.jpg" alt="">
+                    <div class="basket__poduct-description">
+                        <h3 class="basket__product-title">Стол MENU</h3>
+                        <p class="basket__product-overview">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+                        <p class="basket__product-price">34 000 руб.</p>
+                            <div class="basket__product-links">
+                                <a class="basket__product-link basket__product-link_click" href="#">Избранные</a>
+                                <a class="basket__product-link basket__product-link_click" href="№">Удалить</a> 
+                            </div>
+                    </div>  
+                </div>  
+                <input class="basket__product-input" type="number" value="1" min="1">
+            </div>
+            <div class="basket__product-item2">
+                <div class="basket__product-card">
+                    <img class="basket__product-Img" src="./Img/BasketNASNAN.jpg" alt="">
+                    <div class="basket__poduct-description">
+                        <h3 class="basket__product-title">Диван NASTAN</h3>
+                        <p class="basket__product-overview">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                        <p class="basket__product-price">80 000 руб.</p>
+                            <div class="basket__product-links">
+                                <a class="basket__product-link basket__product-link_click" href="#">Избранные</a>
+                                <a class="basket__product-link basket__product-link_click" href="№">Удалить</a> 
+                            </div>
+                    </div>  
+                </div>  
+                <input class="basket__product-input" type="number" value="1" min="1">
+            </div>
+                <div class="basket__product-actions">
+                    <button class="basket__product-button">Очистить корзину</button>
+                </div>
+                <div><a href="index.html" class="basket__product-actions basket__product-actions_index ">Продолжить покупки</a></div>
+        </div>
+        <form class="basket__content">
+            <H3 class="basket__content-title">Оформление заказа</H3>
+            <div class="basket__content-about">
+                <label class="content-label" for="name">Имя Фамилия:</label>
+                <input class="basket__content-field basket__content-field_name" id="name" placeholder="Имя Фамилия" type="text" required aria-label="Имя Фамилия">
+                <label class="content-label" for="phone">Телефон:</label>
+                <input class="basket__content-field basket__content-field_phone" id="phone" placeholder="+ 7 904 000 80 80" type="tel" pattern="[0-9]{10,11}"  required aria-label="Телефон">
+                <label class="content-label" for="address">Адрес доставки:</label>
+                <input class="basket__content-field basket__content-field_address" id="address" placeholder="Адрес доставки" type="text" required aria-label="Адрес доставки">
+            </div>
+            <div class="basket__content-total">
+            <h3 class="basket__content-total-title">Итого: <span class="basket__content-price">128 000 руб.</span></h3>
+            <button class="basket__content-button">Оформить заказ</button>
+            </div>
+        </form>
+    </section>
+    <section class="section2">
+        <H2 class="section2__title">Специальные предложения</H2>
+        <div class="special center">
+            <article class="product">
+                <div class="product-smile">
+                    <img class="product-heartsmile" src="./Img/basic_heart_outline.png" alt="Закрепить">
+                    <img class="product-shoppihgsmile" src="./Img/shopping-bag-line.png" alt="Избранное">
+                    <img class="product__Img" src="./Img/BasketTATRAN.jpg" alt="Кровать TATRAN">
+                </div>
+                <!-- <a href="product.html">люстра VODA</a> -->
+                <H3 class="product__title">Кровать TATRAN</H3>
+                <p class="product__subtitle">Основание из полированной нержавеющей стали, придает оригинальный
+                    парящий эффект.</p>
+                <div class="product__boxprice">
+                    <p class="product__price">120 000 руб.</p>
+                    <p class="product__price product__price_old">140 000 руб.</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-smile">
+                    <img class="product-heartsmile" src="./Img/basic_heart_outline.png" alt="Закрепить">
+                    <img class="product-shoppihgsmile" src="./Img/shopping-bag-line.png" alt="Избранное">
+                    <img class="product__Img" src="./Img/BasketVILORA.jpg" alt="Кресло VILORA">
+                </div>
+                <H3 class="product__title">Кресло VILORA</H3>
+                <p class="product__subtitle">Модель отличается простотой линий и форм, отсутствием броского декора.
+                </p>
+                <div class="product__boxprice">
+                    <p class="product__price">21 000 руб.</p>
+                    <p class="product__price product__price_old">28 000 руб.</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-smile">
+                    <img class="product-heartsmile" src="./Img/basic_heart_outline.png" alt="Закрепить">
+                    <img class="product-shoppihgsmile" src="./Img/shopping-bag-line.png" alt="Избранное">
+                    <img class="product__Img" src="./Img/BasketMENU.jpg" alt="Стол MENU">
+                </div>
+                <H3 class="product__title">Стол MENU</H3>
+                <p class="product__subtitle">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                <div class="product__boxprice">
+                    <p class="product__price">34 000 руб.</p>
+                    <p class="product__price product__price_old">45 000 руб.</p>
+                </div>
+            </article>
+            
+        </div>
+        <div class="section2__basket-click">
+            <a class="section2__basket-more" href="#">Перейти в каталог</a>
+        </div>
+    </section>
+    <Footer class="footer center">
+        <a href="index.html"> <img class="footer__logo" src="./Img/Интерьер..svg" alt="логотип"></a>
+        <div class="footer__content">
+            <div class="footer__info">
+                <nav class="footer__item">
+                    <h4 class="footer__title">Меню</h4>
+                    <a class="footer__link" href="index.html">Главная</a>
+                    <a class="footer__link" href="catalog.html">Каталог</a>
+                    <a class="footer__link" href="basket.html">Корзина</a>
+                </nav>
+                <div class="footer__item">
+                    <h4 class="footer__title">Контакты</h4>
+                    <a class="footer__link" href="#">+7 908 800 80 80</a>
+                    <a class="footer__link" href="#">help@interier.com</a>
+                    <div class="footer__icons">
+                        <a class="footer__icons-VK" href="#">
+                            <svg viewBox="0 0 24.0005 14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000488" height="14.000000" fill="none" customFrame="#000000">
+	                        <path id="Vector" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0L20.03 0C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057L14.019 0.948C14.019 0.292 13.835 0 13.279 0L9.151 0C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106L9.526 6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0L0.9 0C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997L14.028 10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14L23.03 14C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948L23.45 0.948Z" fill="rgb(136.078,136.078,136.078)" fill-rule="evenodd" />
+                            </svg>
+                        </a> 
+                        <a class="footer__icons-TLM" href="#">
+                            <svg viewBox="0 0 21 17.6758" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.000000" height="17.675781" fill="none" customFrame="#000000">
+	                        <path id="Vector" d="M19.2952 0.200894L0.690181 7.4125C-0.0585179 7.74834 -0.311748 8.42087 0.50922 8.78587L5.28221 10.3105L16.8227 3.14143C17.4528 2.69136 18.0979 2.81137 17.5428 3.30647L7.63109 12.3272L7.31974 16.1448C7.60812 16.7342 8.13615 16.737 8.47297 16.444L11.2152 13.8359L15.9117 17.3709C17.0025 18.02 17.596 17.6011 17.8307 16.4114L20.9112 1.74952C21.231 0.285058 20.6856 -0.360199 19.2952 0.200894Z" fill="rgb(136.078,136.078,136.078)" fill-rule="nonzero" />
+                            </svg>
+                        </a>
+                        <a class="footer__icons-DZ" href="#">
+                            <svg viewBox="0 0 19 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.000000" height="18.000000" fill="none" customFrame="#000000">
+	                        <path id="Vector" d="M11.3321 10.7357C9.83929 12.195 9.73071 14.0143 9.60178 18C13.5239 18 16.2314 17.9871 17.6293 16.7014C18.9864 15.3771 19 12.69 19 9.09643C14.7929 9.225 12.8725 9.32143 11.3321 10.7357ZM0 9.09643C0 12.69 0.0135714 15.3771 1.37071 16.7014C2.76857 17.9871 5.47607 18 9.39821 18C9.2625 14.0143 9.16071 12.195 7.66786 10.7357C6.1275 9.32143 4.20714 9.21857 0 9.09643ZM9.39821 0C5.48286 0 2.76857 0.0128571 1.37071 1.29857C0.0135714 2.62286 0 5.31 0 8.90357C4.20714 8.775 6.1275 8.67857 7.66786 7.26429C9.16071 5.805 9.26929 3.98571 9.39821 0ZM11.3321 7.26429C9.83929 5.805 9.73071 3.98571 9.60178 0C13.5239 0 16.2314 0.0128571 17.6293 1.29857C18.9864 2.62286 19 5.31 19 8.90357C14.7929 8.775 12.8725 8.67857 11.3321 7.26429Z" fill="rgb(136.078,136.078,136.078)" fill-rule="nonzero" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <form class="footer__form">
+                <p class="footer__form-text">Получайте наши новости и обновления</p>
+                <input class="IPT" type="email" placeholder=" Ваш e-mail">
+                <button class="BTN">Подписаться</button>
+            </form>
+        </div>
+    </Footer>
+</body>
+</html>
